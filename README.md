@@ -1,2 +1,1 @@
-# EnviarParaTransferSH-BATCH
- 
+Script para enviar arquivos ao site TransferSH via cURL
