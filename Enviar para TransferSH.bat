@@ -1,4 +1,8 @@
-:: Batch desenvolvido por: FireHDPower#5551
+:: Este arquivo foi desenvolvido pelo: FirePower#5551
+:: This file was developed by: FirePower#5551
+
+:: [PT-BR] Por favor, caso você for usar partes desse script, deixe o meu repositório ou o meu ID do Discord nos créditos do seu arquivo, ou vídeo
+:: [EN-US] Please, if you are going to use parts of this script, leave my repository or my Discord ID in the credits of your file, or video
 
 @echo off
 
@@ -8,7 +12,17 @@ title Enviar para TransferSH - Por FireHDPower#5551
 :: Setando cor do texto no CMD
 color F >nul 2>&1
 
-:: Avisos legais para ler antes do uso do script e criador do código
+:: Tamanhos do arquivo
+set Tamanho=%~z1
+set B=%Tamanho% B
+set /a KB="Tamanho/1000"
+set KB=%KB% KB
+set /a MB="Tamanho/1000000"
+set MB=%MB% MB
+set /a GB="Tamanho/1000000000"
+set GB=%GB% GB
+
+:: Criador do código e informações do arquivo
 echo.
 echo - Discord do Criador: FireHDPower#5551
 echo - Repositorio no GitHub: https://github.com/Henrique-Coder/EnviarParaTransferSH-BATCH
@@ -18,7 +32,7 @@ echo.
 echo - Diretorio: %~1
 echo - Nome: %~n1
 echo - Extensao: %~x1
-echo - Tamanho: %~z1 B
+echo - Tamanho: %GB% / %MB% / %KB% / %B%
 echo.
 echo ------------------------------ CLIQUE EM QUALQUER TECLA PARA INICIAR O UPLOAD DO ARQUIVO ------------------------------
 
@@ -56,7 +70,7 @@ echo - Link: %link_upload%
 echo.
 echo - Diretorio: %~1
 echo - Arquivo: %~n1%~x1
-echo - Tamanho: %~z1 B
+echo - Tamanho: %GB% / %MB% / %KB% / %B%
 echo.
 echo -----------------------------------------------------------------------------------------------------------------------
 echo.
